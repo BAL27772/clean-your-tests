@@ -62,4 +62,23 @@ describe('calculateProductPrice', () => {
 
     expect(() => pricing.calculateProductPrice(unknownProduct, {}, {})).to.throw('Unknown product type: vision')
   })
-})
+
+  
+  describe('formatPrice', () => {
+    it('returns a number in dollar format with two decimal places', () => {
+      let result = pricing.formatPrice(7.82)
+      expect(result).to.eq(7.82)
+    })
+
+  })
+  
+  describe('getEmployerContribution', () => {
+    
+
+
+
+
+  })
+    
+  
+  })
